@@ -43,7 +43,10 @@
                     <classPaths>
                         <classPath>${project.build.outputDirectory}</classPath>
                     </classPaths>
-                    <includePath>${env.LIBND4J_HOME}/blas</includePath>
+                    <includePaths>
+                         <includePath>${env.LIBND4J_HOME}/blas</includePath>
+ 		         <includePath>${env.LIBND4J_HOME}/include</includePath> 
+                    </includePaths>
                     <linkPath>${env.LIBND4J_HOME}/blasbuild/blas</linkPath>
                 </configuration>
                 <executions>
